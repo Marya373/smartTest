@@ -1,0 +1,317 @@
+<html><head><base href="https://websim.ai/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PostConnect - Ваш партнер в мире постаматов</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  nav {
+    float: right;
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav ul li {
+    display: inline;
+    margin-left: 1rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+  }
+  .hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 8rem 0 4rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #003d82;
+  }
+  .features, .about {
+    padding: 4rem 0;
+    background-color: #ffffff;
+  }
+  .feature {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .feature i {
+    font-size: 3rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .projects {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .project-info {
+    padding: 1.5rem;
+  }
+  .project-info h3 {
+    margin-top: 0;
+    color: #0056b3;
+  }
+  .project-info p {
+    margin-bottom: 1rem;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    color: #0056b3;
+    margin-bottom: 1rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <rect x="40" y="60" width="120" height="140" rx="10" fill="#0056b3"/>
+          <rect x="50" y="70" width="100" height="80" rx="5" fill="#ffffff"/>
+          <circle cx="100" cy="170" r="10" fill="#ffd700"/>
+          <path d="M70 90 Q70 70 90 70 Q110 70 110 90 Q110 110 90 110 L90 130" 
+                stroke="#0056b3" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <path d="M130 40 L160 40 L160 70" stroke="#007bff" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M155 65 L160 70 L165 65" stroke="#007bff" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <circle cx="160" cy="40" r="15" stroke="#007bff" stroke-width="4" fill="none"/>
+          <path d="M140 30 Q150 20 160 30" stroke="#007bff" stroke-width="4" fill="none"/>
+          <path d="M135 20 Q150 5 165 20" stroke="#007bff" stroke-width="4" fill="none"/>
+        </svg>
+        <span class="company-name">PostConnect</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#projects">Наши проекты</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Инновационные решения для постаматов</h1>
+      <p>Подключаем и обслуживаем постаматы по всей России</p>
+      <a href="#contact" class="btn">Связаться с нами</a>
+    </div>
+  </section>
+
+  <section class="features" id="services">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-network-wired"></i>
+        <h2>Подключение постаматов</h2>
+        <p>Быстрое и надежное подключение постаматов к сети</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-cogs"></i>
+        <h2>Техническое обслуживание</h2>
+        <p>Регулярное обслуживание для бесперебойной работы</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h2>Круглосуточная поддержка</h2>
+        <p>Техническая поддержка 24/7 для решения любых вопросов</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Наши проекты</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img class="project-image" src="https://postconnect.ru/images/project1.jpg" alt="Сеть постаматов в торговых центрах" width="300" height="200">
+          <div class="project-info">
+            <h3>Сеть постаматов в торговых центрах</h3>
+            <p>Установка и подключение 500+ постаматов в крупнейших ТЦ России</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="https://postconnect.ru/images/project2.jpg" alt="Умные постаматы для ЖК" width="300" height="200">
+          <div class="project-info">
+            <h3>Умные постаматы для ЖК</h3>
+            <p>Разработка и внедрение системы умных постаматов для жилых комплексов</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="https://postconnect.ru/images/project3.jpg" alt="Модернизация сети постаматов" width="300" height="200">
+          <div class="project-info">
+            <h3>Модернизация сети постаматов</h3>
+            <p>Обновление программного обеспечения и оборудования для 1000+ постаматов</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="/a/3ec02585-bab0-4de2-84c2-6f6fe1a334a2" alt="Интеграция постаматов с системой химчистки" width="300" height="200">
+          <div class="project-info">
+            <h3>Интеграция с системой химчистки</h3>
+            <p>Разработка и внедрение системы интеграции постаматов с сервисом химчистки "Диана"</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="https://postconnect.ru/images/project5.jpg" alt="Экологичные постаматы для парков" width="300" height="200">
+          <div class="project-info">
+            <h3>Экологичные постаматы для парков</h3>
+            <p>Разработка и установка энергоэффективных постаматов с солнечными панелями в городских парках</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img class="project-image" src="https://postconnect.ru/images/project6.jpg" alt="Постаматы для университетов" width="300" height="200">
+          <div class="project-info">
+            <h3>Постаматы для университетов</h3>
+            <p>Внедрение системы постаматов в крупнейших университетах страны для удобства студентов и сотрудников</p>
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>О нас</h2>
+      <p>Мы все придумаем за Вас!</p>
+      <p>PostConnect - это команда профессионалов, специализирующихся на инновационных решениях в сфере постаматов. Мы не просто подключаем и обслуживаем постаматы, мы создаем комплексные решения, которые меняют подход к доставке и хранению посылок. Наша миссия - сделать процесс получения и отправки посылок максимально удобным и эффективным для всех участников рынка.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2023 PostConnect. Все права защищены.</p>
+      <p>Email: info@postconnect.ru | Телефон: +7 (999) 123-45-67</p>
+    </div>
+  </footer>
+
+  <script>
+    // Плавная прокрутка к разделам
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Анимация логотипа
+    const logo = document.querySelector('.logo');
+    logo.style.transition = 'transform 0.3s ease';
+    
+    logo.addEventListener('mouseover', () => {
+      logo.style.transform = 'scale(1.1)';
+    });
+    
+    logo.addEventListener('mouseout', () => {
+      logo.style.transform = 'scale(1)';
+    });
+
+    // Анимация карточек проектов
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.style.transform = 'translateY(-10px)';
+        card.style.boxShadow = '0 6px 12px rgba(0,0,0,0.15)';
+      });
+      card.addEventListener('mouseout', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+      });
+    });
+  </script>
+</body>
+</html>
